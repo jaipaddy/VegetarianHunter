@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/abc_button_padding_horizontal_material"
+    android:background="@drawable/screen">
+
+
+    <TextView
+        android:layout_width="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+        android:id="@+id/name"
+        android:textColor="#ffbe0030" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distance"
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:id="@+id/distance"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffbe0030"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textSize="@dimen/abc_text_size_body_2_material"
+        android:id="@+id/description"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/abc_button_padding_horizontal_material"
+        android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+        android:textStyle="bold|italic"
+        android:textColor="@color/bright_foreground_inverse_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:id="@+id/phone"
+        android:textSize="@dimen/abc_text_size_body_2_material"
+        android:layout_below="@+id/description"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/abc_button_padding_horizontal_material"
+        android:textStyle="normal|bold"
+        android:textColor="#ff1724ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:id="@+id/address"
+        android:textSize="@dimen/abc_text_size_body_2_material"
+        android:layout_below="@+id/phone"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/abc_button_padding_horizontal_material"
+        android:textStyle="normal"
+        android:textColor="#ff1724ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city"
+        android:id="@+id/city"
+        android:textSize="@dimen/abc_text_size_body_2_material"
+        android:layout_marginRight="@dimen/abc_control_inset_material"
+        android:layout_alignTop="@+id/address"
+        android:layout_toRightOf="@+id/address"
+        android:layout_toEndOf="@+id/address"
+        android:textColor="#ff1724ff"
+        android:textStyle="normal" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:isIndicator="true"
+        android:layout_gravity="center_vertical"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="0.1"
+        android:labelFor="@id/name"
+        android:layout_alignBottom="@+id/description"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
